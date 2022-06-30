@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Block\Adminhtml\Items\Edit\Tab;
+namespace Ktplnew\RequestForQuote\Block\Adminhtml\Items\Edit\Tab;
 
 use Magento\Backend\Block\Widget\Form\Generic;
 use Magento\Backend\Block\Widget\Tab\TabInterface;
@@ -66,7 +66,7 @@ class Main extends Generic implements TabInterface
      */
     protected function _prepareForm()
     {
-        $model = $this->_coreRegistry->registry('current_ktpl_requestforquote_items');
+        $model = $this->_coreRegistry->registry('current_ktplnew_requestforquote_items');
         /** @var \Magento\Framework\Data\Form $form */
         $form = $this->_formFactory->create();
         $form->setHtmlIdPrefix('item_');
