@@ -31,11 +31,11 @@ $allowedQty = $viewModel->setItem($item)->getMinMaxQty();
     <div class="product-item-actions">
         <div class="actions-primary">
 		<?php
-		if($this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/general/enable'))
+		if($this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/general/enable'))
 		{
 		?>
 		<button type="button" class="btn btn-primary btn-lg" id="popupButton" data-toggle="modal"
-  data-target="#myModal"><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/button_txt');?></button>
+  data-target="#myModal"><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/button_txt');?></button>
   		<?php }else{ ?>
             <button type="button" data-role="tocart" data-post='<?= /* @noEscape */ $block->getItemAddToCartParams($item) ?>' title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>" data-item-id="<?= $block->escapeHtmlAttr($item->getId()) ?>" class="action tocart primary">
                 <span><?= $block->escapeHtml(__('Add to Cart')) ?></span>
@@ -57,4 +57,4 @@ $allowedQty = $viewModel->setItem($item)->getMinMaxQty();
     </fieldset>
 </div>
 
-<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktpl_RequestForQuote::requestforquotemodal.phtml")->toHtml() ?>
+<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktplnew_RequestForQuote::requestforquotemodal.phtml")->toHtml() ?>
