@@ -1,6 +1,6 @@
 {
-    "name": "ktpl/magento2-requestforquote",
-    "description": "Ktpl RequestForQuote for Magento 2",
+    "name": "ktplnew/magento2-requestforquote",
+    "description": "Ktpl New RequestForQuote for Magento 2",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0"
     },
@@ -13,7 +13,7 @@
     "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Ktpl\\RequestForQuote\\": ""
+      "Ktplnew\\RequestForQuote\\": ""
     }
   }
 }
