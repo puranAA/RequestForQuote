@@ -1,13 +1,13 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Index;
+namespace Ktplnew\RequestForQuote\Controller\Index;
 
 use Magento\Framework\App\Action\Context;
-use Ktpl\RequestForQuote\Model\RequestForQuoteFactory;
+use Ktplnew\RequestForQuote\Model\RequestForQuoteFactory;
 
 use Zend\Log\Filter\Timestamp;
 use Magento\Store\Model\StoreManagerInterface;
@@ -62,9 +62,9 @@ class Save extends \Magento\Framework\App\Action\Action
 						'email' => $data['email']
 					];
 					 
-					$sentToEmail = $this->_scopeConfig ->getValue('ktpl_config/advance/sender_email',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+					$sentToEmail = $this->_scopeConfig ->getValue('ktplnew_config/advance/sender_email',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 					 
-					$sentToName = $this->_scopeConfig ->getValue('ktpl_config/advance/sender_name',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+					$sentToName = $this->_scopeConfig ->getValue('ktplnew_config/advance/sender_name',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
 					 
 					 
 					$transport = $this->_transportBuilder
