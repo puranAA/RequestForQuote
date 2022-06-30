@@ -103,11 +103,11 @@ $_helper = $block->getData('outputHelper');
                                                     ?>">
                                             <?= $block->getBlockHtml('formkey') ?>
 											<?php
-											if($this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/general/enable'))
+											if($this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/general/enable'))
 											{
 											?>
 											<button type="button" class="btn btn-primary btn-lg" id="popupButton" data-toggle="modal"
-  data-target="#myModal"><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/button_txt');?></button>
+  data-target="#myModal"><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/button_txt');?></button>
   											<?php }else{ ?>
                                             <button type="submit"
                                                     title="<?= $escaper->escapeHtmlAttr(__('Add to Cart')) ?>"
@@ -180,4 +180,4 @@ $_helper = $block->getData('outputHelper');
     </script>
 <?php endif; ?>
 
-<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktpl_RequestForQuote::requestforquotemodal.phtml")->toHtml() ?>
+<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktplnew_RequestForQuote::requestforquotemodal.phtml")->toHtml() ?>
