@@ -1,12 +1,12 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml\Items;
 
-class Index extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
+class Index extends \Ktplnew\RequestForQuote\Controller\Adminhtml\Items
 {
     /**
      * Items list.
@@ -17,7 +17,7 @@ class Index extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
     {
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Ktpl_RequestForQuote::test');
+        $resultPage->setActiveMenu('Ktplnew_RequestForQuote::test');
         $resultPage->getConfig()->getTitle()->prepend(__('Request For Quote'));
         $resultPage->addBreadcrumb(__('Request For Quote'), __('Request For Quote'));
         $resultPage->addBreadcrumb(__('Quotes'), __('Quotes'));
