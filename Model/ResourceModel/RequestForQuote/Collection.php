@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Model\ResourceModel\RequestForQuote;
+namespace Ktplnew\RequestForQuote\Model\ResourceModel\RequestForQuote;
  
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -15,8 +15,8 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
     protected function _construct()
     {
         $this->_init(
-            'Ktpl\RequestForQuote\Model\RequestForQuote',
-            'Ktpl\RequestForQuote\Model\ResourceModel\RequestForQuote'
+            'Ktplnew\RequestForQuote\Model\RequestForQuote',
+            'Ktplnew\RequestForQuote\Model\ResourceModel\RequestForQuote'
         );
     }
 }
