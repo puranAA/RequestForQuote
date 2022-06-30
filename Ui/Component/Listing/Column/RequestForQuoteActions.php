@@ -1,14 +1,14 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Ui\Component\Listing\Column;
+namespace Ktplnew\RequestForQuote\Ui\Component\Listing\Column;
 
 class RequestForQuoteActions extends \Magento\Ui\Component\Listing\Columns\Column
 {
-    const URL_PATH_EDIT = 'ktpl_requestforquote/items/edit';
+    const URL_PATH_EDIT = 'ktplnew_requestforquote/items/edit';
 
     /**
      * URL builder
