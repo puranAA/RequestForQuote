@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Index;
+namespace Ktplnew\RequestForQuote\Controller\Index;
 
 class Index extends \Magento\Framework\App\Action\Action
 {
