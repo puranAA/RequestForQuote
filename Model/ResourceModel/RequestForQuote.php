@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Model\ResourceModel;
+namespace Ktplnew\RequestForQuote\Model\ResourceModel;
 
 class RequestForQuote extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
@@ -13,6 +13,6 @@ class RequestForQuote extends \Magento\Framework\Model\ResourceModel\Db\Abstract
      */
     protected function _construct()
     {
-        $this->_init('ktpl_requestforquote', 'requestforquote_id');   //here "ktpl_requestforquote" is table name and "requestforquote_id" is the primary key of custom table
+        $this->_init('ktplnew_requestforquote', 'requestforquote_id');   //here "ktplnew_requestforquote" is table name and "requestforquote_id" is the primary key of custom table
     }
 }
