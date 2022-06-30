@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Model\Source;
+namespace Ktplnew\RequestForQuote\Model\Source;
 
 use Magento\Eav\Model\Entity\Attribute\Source\AbstractSource;
 use Magento\Eav\Model\Entity\Attribute\Source\SourceInterface;
