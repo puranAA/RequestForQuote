@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Block\Adminhtml\Items\Edit;
+namespace Ktplnew\RequestForQuote\Block\Adminhtml\Items\Edit;
 
 class Form extends \Magento\Backend\Block\Widget\Form\Generic
 {
@@ -32,7 +32,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
             [
                 'data' => [
                     'id' => 'edit_form',
-                    'action' => $this->getUrl('ktpl_requestforquote/items/save'),
+                    'action' => $this->getUrl('ktplnew_requestforquote/items/save'),
                     'method' => 'post',
                     'enctype' => 'multipart/form-data'
                 ],
