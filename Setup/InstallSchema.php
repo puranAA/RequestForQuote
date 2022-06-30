@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Setup;
+namespace Ktplnew\RequestForQuote\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -25,10 +25,10 @@ class InstallSchema implements InstallSchemaInterface
 		$installer->startSetup();
 
 		/**
-		 * Creating table ktpl_requestforquote
+		 * Creating table ktplnew_requestforquote
 		 */
 		$table = $installer->getConnection()->newTable(
-			$installer->getTable('ktpl_requestforquote')
+			$installer->getTable('ktplnew_requestforquote')
 		)->addColumn(
 			'requestforquote_id',
 			\Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
@@ -84,7 +84,7 @@ class InstallSchema implements InstallSchemaInterface
 			['nullable' => false],
 			'Created At'
 		)->setComment(
-            'Ktpl RequestForQuote Table'
+            'Ktpl New RequestForQuote Table'
         );
 		$installer->getConnection()->createTable($table);
 		$installer->endSetup();
