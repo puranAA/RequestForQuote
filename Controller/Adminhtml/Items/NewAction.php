@@ -1,13 +1,13 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
 
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml\Items;
 
-class NewAction extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
+class NewAction extends \Ktplnew\RequestForQuote\Controller\Adminhtml\Items
 {
 
     public function execute()
