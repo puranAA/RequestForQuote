@@ -29,11 +29,11 @@
         <?php endif; ?>
         <div class="actions">
 		<?php
-		if($this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/general/enable'))
+		if($this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/general/enable'))
 		{
 		?>
 			<button type="button" class="btn btn-primary btn-lg" id="popupButton" data-toggle="modal"
-  data-target="#myModal"><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/button_txt');?></button> <a href="tel:<?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/contact_no');?>"><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/contact_txt');?></a>
+  data-target="#myModal"><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/button_txt');?></button> <a href="tel:<?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/contact_no');?>"><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/contact_txt');?></a>
   		<?php }else{ ?>
             <button type="submit"
                     title="<?= $block->escapeHtmlAttr($buttonTitle) ?>"
@@ -55,4 +55,4 @@
     }
 </script>
 
-<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktpl_RequestForQuote::requestforquotemodal.phtml")->toHtml() ?>
+<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktplnew_RequestForQuote::requestforquotemodal.phtml")->toHtml() ?>
