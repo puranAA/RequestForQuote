@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml\Items;
 
 class InlineEdit extends \Magento\Backend\App\Action
 {
@@ -34,7 +34,7 @@ class InlineEdit extends \Magento\Backend\App\Action
             } else {
                 foreach (array_keys($postItems) as $modelid) {
                     /** @var \Magento\Cms\Model\Block $block */
-                    $model = $this->_objectManager->create('Ktpl\RequestForQuote\Model\RequestForQuote')->load($modelid);
+                    $model = $this->_objectManager->create('Ktplnew\RequestForQuote\Model\RequestForQuote')->load($modelid);
                     try {
                         $model->setData(array_merge($model->getData(), $postItems[$modelid]));
                         $model->save();
