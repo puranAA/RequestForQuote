@@ -1,11 +1,11 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
 
-namespace Ktpl\RequestForQuote\Block\Adminhtml;
+namespace Ktplnew\RequestForQuote\Block\Adminhtml;
 
 class Items extends \Magento\Backend\Block\Widget\Grid\Container
 {
