@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Model;
+namespace Ktplnew\RequestForQuote\Model;
 
 use Magento\Framework\Model\AbstractModel;
 
@@ -15,6 +15,6 @@ class RequestForQuote extends AbstractModel
      */
     protected function _construct()
     {
-        $this->_init('Ktpl\RequestForQuote\Model\ResourceModel\RequestForQuote');
+        $this->_init('Ktplnew\RequestForQuote\Model\ResourceModel\RequestForQuote');
     }
 }
