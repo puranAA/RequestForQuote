@@ -281,11 +281,11 @@ $_item = null;
                                                                    value="<?= /* @noEscape */ $value ?>">
                                                             <?= $block->getBlockHtml('formkey') ?>
 															<?php
-															if($this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/general/enable'))
+															if($this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/general/enable'))
 															{
 															?>
 															<button type="button" class="btn btn-primary btn-lg popupButton2" data-toggle="modal"
-  data-target=".myModal2"><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/button_txt');?></button>
+  data-target=".myModal2"><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/button_txt');?></button>
   															<?php }else{ ?>
                                                              <button type="submit"
                                                                     title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>"
@@ -341,4 +341,4 @@ $_item = null;
         <?php endif;?>
         <?php endif;?>
 		
-<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktpl_RequestForQuote::relatedmodal.phtml")->toHtml() ?>
+<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Ktplnew_RequestForQuote::relatedmodal.phtml")->toHtml() ?>
