@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml;
 
 use Magento\Framework\App\Filesystem\DirectoryList;
 use Magento\MediaStorage\Model\File\UploaderFactory;
@@ -74,7 +74,7 @@ abstract class Items extends \Magento\Backend\App\Action
     protected function _initAction()
     {
         $this->_view->loadLayout();
-        $this->_setActiveMenu('Ktpl_RequestForQuote::items')->_addBreadcrumb(__('Quotes'), __('Quotes'));
+        $this->_setActiveMenu('Ktplnew_RequestForQuote::items')->_addBreadcrumb(__('Quotes'), __('Quotes'));
         return $this;
     }
 
@@ -85,6 +85,6 @@ abstract class Items extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Ktpl_RequestForQuote::items');
+        return $this->_authorization->isAllowed('Ktplnew_RequestForQuote::items');
     }
 }
