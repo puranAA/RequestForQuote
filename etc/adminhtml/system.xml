@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="ktpl" translate="label" sortOrder="500">
-            <label>Ktpl RequestForQuote</label>
+        <tab id="ktplnew" translate="label" sortOrder="500">
+            <label>Ktpl New RequestForQuote</label>
         </tab>
-        <section id="ktpl_config" translate="label" sortOrder="1" showInStore="1" showInWebsite="1" showInDefault="1">
+        <section id="ktplnew_config" translate="label" sortOrder="1" showInStore="1" showInWebsite="1" showInDefault="1">
             <class>separator-top</class>
             <label>RequestForQuote</label>
-            <tab>ktpl</tab>
-            <resource>Ktpl_RequestForQuote::config_requestforquote</resource>
+            <tab>ktplnew</tab>
+            <resource>Ktplnew_RequestForQuote::config_requestforquote</resource>
             <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General Configuration</label>
                 <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
