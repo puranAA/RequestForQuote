@@ -1,16 +1,16 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml\Items;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Ui\Component\MassAction\Filter;
-use Ktpl\RequestForQuote\Model\ResourceModel\RequestForQuote\CollectionFactory;
+use Ktplnew\RequestForQuote\Model\ResourceModel\RequestForQuote\CollectionFactory;
 
 class MassStatus extends \Magento\Backend\App\Action
 {
