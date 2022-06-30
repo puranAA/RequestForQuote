@@ -1,18 +1,18 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml\Items;
 
-class Save extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
+class Save extends \Ktplnew\RequestForQuote\Controller\Adminhtml\Items
 {
     public function execute()
     {
         if ($this->getRequest()->getPostValue()) {
             try {
-                $model = $this->_objectManager->create('Ktpl\RequestForQuote\Model\RequestForQuote');
+                $model = $this->_objectManager->create('Ktplnew\RequestForQuote\Model\RequestForQuote');
                 $data = $this->getRequest()->getPostValue();
                 $inputFilter = new \Zend_Filter_Input(
                     [],
@@ -34,18 +34,18 @@ class Save extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
                 $this->messageManager->addSuccess(__('You saved the quote.'));
                 $session->setPageData(false);
                 if ($this->getRequest()->getParam('back')) {
-                    $this->_redirect('ktpl_requestforquote/*/edit', ['id' => $model->getId()]);
+                    $this->_redirect('ktplnew_requestforquote/*/edit', ['id' => $model->getId()]);
                     return;
                 }
-                $this->_redirect('ktpl_requestforquote/*/');
+                $this->_redirect('ktplnew_requestforquote/*/');
                 return;
             } catch (\Magento\Framework\Exception\LocalizedException $e) {
                 $this->messageManager->addError($e->getMessage());
                 $id = (int)$this->getRequest()->getParam('id');
                 if (!empty($id)) {
-                    $this->_redirect('ktpl_requestforquote/*/edit', ['id' => $id]);
+                    $this->_redirect('ktplnew_requestforquote/*/edit', ['id' => $id]);
                 } else {
-                    $this->_redirect('ktpl_requestforquote/*/new');
+                    $this->_redirect('ktplnew_requestforquote/*/new');
                 }
                 return;
             } catch (\Exception $e) {
@@ -54,10 +54,10 @@ class Save extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
                 );
                 $this->_objectManager->get('Psr\Log\LoggerInterface')->critical($e);
                 $this->_objectManager->get('Magento\Backend\Model\Session')->setPageData($data);
-                $this->_redirect('ktpl_requestforquote/*/edit', ['id' => $this->getRequest()->getParam('id')]);
+                $this->_redirect('ktplnew_requestforquote/*/edit', ['id' => $this->getRequest()->getParam('id')]);
                 return;
             }
         }
-        $this->_redirect('ktpl_requestforquote/*/');
+        $this->_redirect('ktplnew_requestforquote/*/');
     }
 }
