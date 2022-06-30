@@ -1,25 +1,25 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Controller\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Controller\Adminhtml\Items;
 
-class Edit extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
+class Edit extends \Ktplnew\RequestForQuote\Controller\Adminhtml\Items
 {
 
     public function execute()
     {
         $id = $this->getRequest()->getParam('id');
         
-        $model = $this->_objectManager->create('Ktpl\RequestForQuote\Model\RequestForQuote');
+        $model = $this->_objectManager->create('Ktplnew\RequestForQuote\Model\RequestForQuote');
 
         if ($id) {
             $model->load($id);
             if (!$model->getId()) {
                 $this->messageManager->addError(__('This quote no longer exists.'));
-                $this->_redirect('ktpl_requestforquote/*');
+                $this->_redirect('ktplnew_requestforquote/*');
                 return;
             }
         }
@@ -28,7 +28,7 @@ class Edit extends \Ktpl\RequestForQuote\Controller\Adminhtml\Items
         if (!empty($data)) {
             $model->addData($data);
         }
-        $this->_coreRegistry->register('current_ktpl_requestforquote_items', $model);
+        $this->_coreRegistry->register('current_ktplnew_requestforquote_items', $model);
         $this->_initAction();
         $this->_view->getLayout()->getBlock('items_items_edit');
         $this->_view->renderLayout();
