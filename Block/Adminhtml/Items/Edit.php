@@ -1,10 +1,10 @@
 <?php
 /**
- * @category   Ktpl
- * @package    Ktpl_RequestForQuote
+ * @category   Ktplnew
+ * @package    Ktplnew_RequestForQuote
  */
 
-namespace Ktpl\RequestForQuote\Block\Adminhtml\Items;
+namespace Ktplnew\RequestForQuote\Block\Adminhtml\Items;
 
 class Edit extends \Magento\Backend\Block\Widget\Form\Container
 {
@@ -40,7 +40,7 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
     {
         $this->_objectId = 'id';
         $this->_controller = 'adminhtml_items';
-        $this->_blockGroup = 'Ktpl_RequestForQuote';
+        $this->_blockGroup = 'Ktplnew_RequestForQuote';
 
         parent::_construct();
 
@@ -64,7 +64,7 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
      */
     public function getHeaderText()
     {
-        $item = $this->_coreRegistry->registry('current_ktpl_requestforquote_items');
+        $item = $this->_coreRegistry->registry('current_ktplnew_requestforquote_items');
         if ($item->getId()) {
             return __("Edit Quote '%1'", $this->escapeHtml($item->getName()));
         } else {
