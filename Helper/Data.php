@@ -1,5 +1,5 @@
 <?php
-namespace Ktpl\RequestForQuote\Helper;
+namespace Ktplnew\RequestForQuote\Helper;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
