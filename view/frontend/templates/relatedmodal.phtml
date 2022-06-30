@@ -5,10 +5,10 @@
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title"><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/inquiry_form_title');?></h4>
+          <h4 class="modal-title"><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/inquiry_form_title');?></h4>
         </div>
         <div class="modal-body">
-          <form class="" action="<?php echo $block->getBaseUrl().'requestforquote/index/save'; ?>" id="ktpl-requestforquote-form" method="post" data-mage-init='{"validation": {}}'>
+          <form class="" action="<?php echo $block->getBaseUrl().'requestforquote/index/save'; ?>" id="ktplnew-requestforquote-form" method="post" data-mage-init='{"validation": {}}'>
     <fieldset class="fieldset">
         <div class="field name">
             <label class="label" for="title"><span>Name</span></label>
@@ -56,7 +56,7 @@
     <div class="actions-toolbar">
         <div class="primary">
             <button type="submit" title="Submit" class="action submit primary">
-                <span><?php echo $this->helper('Ktpl\RequestForQuote\Helper\Data')->getConfig('ktpl_config/advance/inquiry_form_submit_btn_txt');?></span>
+                <span><?php echo $this->helper('Ktplnew\RequestForQuote\Helper\Data')->getConfig('ktplnew_config/advance/inquiry_form_submit_btn_txt');?></span>
             </button>
         </div>
     </div>
@@ -66,7 +66,7 @@
     </div>
   </div>
   <script>
-  require(['jquery', 'Ktpl_RequestForQuote/js/custom_requestforquote'],
+  require(['jquery', 'Ktplnew_RequestForQuote/js/custom_requestforquote'],
       function ($) {
           return;
       }
